@@ -4,7 +4,16 @@ import CardRelleno from "../components/CardRelleno";
 import { PiBowlFoodFill } from "react-icons/pi";
 import CardProductoUn from "../components/CardProductoUn";
 
-import imgCafe from '../assets/cafe.png'
+import imgBurger from '../assets/fastfood/burger.png';
+import imgBurger2 from '../assets/fastfood/burger2.png';
+import imgPancho from '../assets/fastfood/pancho.png';
+import imgFritas from '../assets/fastfood/fritas.png';
+import imgGaseosas1 from '../assets/fastfood/gaseosas1.png';
+import imgGaseosas2 from '../assets/fastfood/gaseosas2.png';
+import imgGaseosas3 from '../assets/fastfood/gaseosas3.png';
+import imgAqua from '../assets/fastfood/aquarius.png';
+import imgAgua from '../assets/fastfood/agua.png';
+import imgHielo from '../assets/fastfood/hielo.png';
 
 import { MdTouchApp } from "react-icons/md";
 import CardChica from "../components/CardChica";
@@ -15,37 +24,37 @@ const Carta = () => {
             <Seccion tituloSeccion={'Especialidades'}
                 icono={<PiBowlFoodFill />}
             >
-                <SubSeccion tituloSubSeccion={'Fast Food'}>
+                <SubSeccion tituloSubSeccion={'Comida Rápida'}>
                     <CardProductoUn
 
-                        imagen={imgCafe}
+                        imagen={imgBurger}
                         titulo={'Hamburguesa Simple'}
-                        descripcion={'Lechuga, tomate y cebolla.'}
+                        descripcion={'Medallón XL y Papas, salsas/aderezos a gusto.'}
                     >
                         <p className="text-sm mr-1"><span className="font-bold">$ 8.000,00</span></p>
                     </CardProductoUn>
                     <CardProductoUn
 
-                        imagen={imgCafe}
+                        imagen={imgBurger2}
                         titulo={'Hamburguesa Completa'}
-                        descripcion={'Lechuga, tomate y cebolla.'}
+                        descripcion={'Medallón XL, Lechuga, tomate, jamón, queso, huevo, bacon y aderezos/salsas a gusto.'}
                     >
                         <p className="text-sm mr-1"><span className="font-bold">$ 12.000,00</span></p>
                     </CardProductoUn>
                     <CardProductoUn
 
-                        imagen={imgCafe}
+                        imagen={imgPancho}
                         titulo={'Super Pancho'}
-                        descripcion={'Pancho, papas, etc'}
+                        descripcion={'Aderezos/salsas y papas a gusto.'}
                     >
                         <p className="text-sm mr-1"><span className="font-bold">$ 4.000,00</span></p>
                     </CardProductoUn>
 
                     <CardProductoUn
 
-                        imagen={imgCafe}
+                        imagen={imgFritas}
                         titulo={'Papas Fritas'}
-                        descripcion={'Papas fritas con cosas, etc.'}
+                        descripcion={'Completa (Bacon, cheddar y verdeo), aderezos/salsas a gusto.'}
                     >
                         <p className="text-sm mr-1"><span className="font-bold">$ 4.000,00</span></p>
                     </CardProductoUn>
@@ -60,43 +69,49 @@ const Carta = () => {
                 <SubSeccion tituloSubSeccion={'Salsas Especiales'}>
                     <CardRelleno
                         titulo={'Salsa Criolla'}
-                        descripcion={'Cebolla, tomate, pimiento, aceite de oliva, vinagre, sal y pimienta.'}
+                        descripcion={''}
+                        sinUnderline={true}
                     />
                     <CardRelleno
                         titulo={'Salsa Provenzal'}
-                        descripcion={'-'}
+                        descripcion={''}
+                        sinUnderline={true}
                     />
                     <CardRelleno
                         titulo={'Chucrut'}
-                        descripcion={'-'}
+                        descripcion={''}
+                        sinUnderline={true}
                     />
                     <CardRelleno
                         titulo={'Salsa Picante (Chili Peppers)'}
-                        descripcion={'-'}
+                        descripcion={''}
+                        sinUnderline={true}
                     />
-                    <CardRelleno
-                        titulo={'Pasta Picante'}
-                        descripcion={'-'}
-                    />
+
                     <CardRelleno
                         titulo={'Salsa de Berenjenas (Baba Ganoush)'}
-                        descripcion={'-'}
+                        descripcion={''}
+                        sinUnderline={true}
                     />
                     <CardRelleno
                         titulo={'Salsa Roquefort'}
-                        descripcion={'-'}
+                        descripcion={''}
+                        sinUnderline={true}
                     />
                     <CardRelleno
                         titulo={'Guacamole'}
-                        descripcion={'-'}
+                        descripcion={''}
+                        sinUnderline={true}
                     />
                     <CardRelleno
                         titulo={'Salsa Capresse'}
-                        descripcion={'-'}
+                        descripcion={''}
+                        sinUnderline={true}
                     />
                     <CardRelleno
                         titulo={'Salsa Napolitana'}
-                        descripcion={'-'}
+                        descripcion={''}
+                        sinUnderline={true}
                     />
 
                 </SubSeccion>
@@ -144,7 +159,15 @@ const Carta = () => {
                 <SubSeccion tituloSubSeccion={'Sin Alcohol'}>
                     <CardChica
 
-                        imagen={imgCafe}
+                        imagen={imgGaseosas1}
+                        titulo={'Gaseosa 1,5 lt Pet'}
+                        descripcion={''}
+                    >
+                        <p className="text-sm mr-1"><span className="font-bold">$ 3.800,00</span></p>
+                    </CardChica>
+                    <CardChica
+
+                        imagen={imgGaseosas2}
                         titulo={'Gaseosa 500 ml Pet'}
                         descripcion={''}
                     >
@@ -152,7 +175,7 @@ const Carta = () => {
                     </CardChica>
                     <CardChica
 
-                        imagen={imgCafe}
+                        imagen={imgGaseosas3}
                         titulo={'Gaseosa 237 ml Vidrio'}
                         descripcion={''}
                     >
@@ -160,7 +183,7 @@ const Carta = () => {
                     </CardChica>
                     <CardChica
 
-                        imagen={imgCafe}
+                        imagen={imgAqua}
                         titulo={'Agua Saborizada 500 ml'}
                         descripcion={''}
                     >
@@ -168,7 +191,7 @@ const Carta = () => {
                     </CardChica>
                     <CardChica
 
-                        imagen={imgCafe}
+                        imagen={imgAgua}
                         titulo={'Agua con Gas 500 ml'}
                         descripcion={''}
                     >
@@ -176,7 +199,7 @@ const Carta = () => {
                     </CardChica>
                     <CardChica
 
-                        imagen={imgCafe}
+                        imagen={imgAgua}
                         titulo={'Agua sin Gas 500 ml'}
                         descripcion={''}
                     >
@@ -190,8 +213,8 @@ const Carta = () => {
             >
                 <CardChica
 
-                    imagen={imgCafe}
-                    titulo={'Bolsa de Hielo 2 kg'}
+                    imagen={imgHielo}
+                    titulo={'Bolsa de Hielo'}
                     descripcion={''}
                 >
                     <p className="text-sm mr-1"><span className="font-bold">$ 3.500,00</span></p>

@@ -5,7 +5,7 @@ const CardProductoUn = ({
     titulo }) => {
     return (
         <div className="border-[3px] border-accent bg-primary  rounded-lg flex flex-col p-1 mb-1">
-            <div className="flex h-32">
+            <div className="flex min-h-32">
                 <div className="w-32  mr-1">
                     <img src={imagen} alt="producto" className="w-full rounded-lg" />
                 </div>
